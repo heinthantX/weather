@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEATHER</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./config.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="flex justify-center items-center h-screen">
+    <section
+      class="w-[400px] h-[500px] bg-gray-900 flex pb-24 pt-4 justify-between flex-col items-center rounded-md shadow-lg relative"
+    >
+      <div class="text-[#FEBD57] text-3xl">Weather</div>
+      <div class="weather-icons">
+        <div class="icon Drizzle">
+          <div class="cloud"></div>
+          <div class="sun">
+            <div class="rays"></div>
+          </div>
+          <div class="rain"></div>
+        </div>
+
+        <div class="icon Thunderstorm">
+          <div class="cloud"></div>
+          <div class="lightning">
+            <div class="bolt"></div>
+            <div class="bolt"></div>
+          </div>
+        </div>
+
+        <div class="icon Clouds Atmosphere">
+          <div class="cloud"></div>
+          <div class="cloud"></div>
+        </div>
+
+        <div class="icon Snow">
+          <div class="cloud"></div>
+          <div class="snow">
+            <div class="flake"></div>
+            <div class="flake"></div>
+          </div>
+        </div>
+
+        <div class="icon Clear">
+          <div class="sun">
+            <div class="rays"></div>
+          </div>
+        </div>
+
+        <div class="icon Rain">
+          <div class="cloud"></div>
+          <div class="rain"></div>
+        </div>
+      </div>
+      <div id="weather" class="text-xl text-white"></div>
+      <div id="temp" class="text-[#FEBD57] text-5xl font-semibold"></div>
+      <div id="city" class="text-xl text-white"></div>
+      <div class="absolute right-6 top-10">
+        <label class="switch">
+          <input id="unitConverterBtn" type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
